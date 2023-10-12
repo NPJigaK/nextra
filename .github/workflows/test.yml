@@ -6,12 +6,8 @@ on:
 
 jobs:
   test:
-    name: Test (${{matrix.os}})
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18]
-        os: [ubuntu-latest, windows-latest]
+    name: Test (Windows)
+    runs-on: windows-latest
 
     steps:
       - name: Cancel Previous Runs
